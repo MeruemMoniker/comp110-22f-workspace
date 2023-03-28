@@ -1,7 +1,7 @@
 """Utils time wew"""
 __author__: 123456789
 
-def all(lip: list = (""), a: int = "") -> bool:
+def all(lip: list = [str], a: int = ()) -> bool:
     i: int = 0
     while i < len(lip):
         if a == lip[i]:
@@ -10,7 +10,7 @@ def all(lip: list = (""), a: int = "") -> bool:
             return False
     return True
 
-def max(lips: list = []) -> int:
+def max(lips: list = [int]) -> int:
     if len(str(lips)) == 0:
         raise ValueError("max() arg is an empty List")
     i: int = 0
@@ -25,11 +25,10 @@ def max(lips: list = []) -> int:
         i += 1
     return z
 
-def is_equal(lipa: list = [int], lipb: list = [int]) -> bool:
+def is_equal(lipa: list[int], lipB: list[int]) -> bool:
     i: int = 0
-    t: int = 0
     while i < len(lipa):
-        if lipa[i] == lipb[i]:
+        if lipa[i] == lipB[i]:
             i += 1
         else:
             return False
