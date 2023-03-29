@@ -1,0 +1,14 @@
+"""utils part 2"""
+# Need to combine import staements into one statement
+
+
+def only_evens(xs: list[int]) -> list:
+    #return a new list only containing the even numbers of xs
+    i: int = 0
+    sy: list[int]
+    while i < len(xs):
+        if xs[i] // 2 == 0:
+            sy.append(xs[i])
+        i += 1
+        
+    return sy
